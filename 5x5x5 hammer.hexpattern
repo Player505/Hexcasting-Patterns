@@ -34,7 +34,7 @@
 
 Mind's Reflection
 Stadiometer's Purification
-Numerical Reflection: 1.5
+@num(1.5)
 Equality Distillation
 
 {
@@ -47,7 +47,7 @@ Equality Distillation
     Alidade's Purification
     Scout's Distillation
     Compass' Purification
-    Numerical Reflection: 1
+    @num(1)
     Zone Distillation: Item
     Thoth's Gambit
 }
