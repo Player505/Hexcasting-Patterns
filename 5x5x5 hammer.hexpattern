@@ -33,15 +33,41 @@
 )
 
 Mind's Reflection
-Compass' Purification
-Mind's Reflection
-Alidade's Purification
-Archer's Distillation
+Stadiometer's Purification
+Numerical Reflection: 1.5
+Equality Distillation
+
 {
-    Additive Distillation
-    Break Block
+    {
+        Recharge Item
+    }
+    Mind's Reflection
+    Compass' Purification
+    Mind's Reflection
+    Alidade's Purification
+    Scout's Distillation
+    Compass' Purification
+    Numerical Reflection: 1
+    Zone Distillation: Item
+    Thoth's Gambit
 }
 
-$vector_array
+{
+    Mind's Reflection
+    Compass' Purification
+    Mind's Reflection
+    Alidade's Purification
+    Archer's Distillation
+    {
+        Additive Distillation
+        Break Block
+    }
+    
+    $vector_array
+    
+    Thoth's Gambit
+}
 
-Thoth's Gambit
+
+Augur's Exaltation
+Hermes' Gambit
