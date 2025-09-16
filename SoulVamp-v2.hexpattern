@@ -1,0 +1,212 @@
+/***
+SoulVampire: A hex to steal truenames to be able to recall them at a later date. Can store around 30-40 truenames 
+before just overloading the iota limit. This can be optimized, probably.
+
+Stores two lists that represent players:
+1. The names of the players that have been bitten
+2. Jump iotas that when run (with a jumpback, or even a chain of them), recalls the players name
+
+These two lists have the same player in the same index to help pull out a specific player,
+...But I do not actually make use of this here, its just provided as a convenience.
+
+A rough explanation of how it works:
+1. load the stored string names and jumps, but we erase the jumps immediately since they are just stored in the hex and aren't used except to add on to.
+2. find the nearby players that can be added to the list, referencing the string list of names to remove any that have been already added.
+3. for the remaining, if there are any remaining, pick the first one and add the string representation of that player to the names and save it to this hex.
+(notable here is that if the hex crashes after this point it might mess up the sync between the two lists since the jump isnt updated till later)
+4. write out the subhex that does two things:
+ a. creates a jump and then leave the hex
+ b. a jump that when evaluated will continue and NOT exit, 
+    instead will add the truename (which is surgeoned in) to the list presumed to be at the beginning of the stack, 
+    then execute a jump that is presumed to be on the top of the stack 
+    (presuambly either leading back to whatever called it, or the next name recall jump)
+5. surgeon the name chosen previously into the step 4 hex
+6. run it to get the jump iota for that name
+7. save that jump iota to this hex.
+
+Step 7 is now first stored into ravenmind before making the jump iota and then loaded after it is created, which cuts out ~10 instructions from each jump iota.
+***/
+// recall the names that are stored
+Consideration: <["name1", "name2"]>
+Consideration: <[name1 jump, name2 jump]>
+Bookkeeper's Gambit: v
+    /// ["names"]
+
+// find all nearby players
+Mind's Reflection
+Compass' Purification
+Numerical Reflection: 32
+Zone Distillation: Player
+    /// ["names"], [truenames]
+
+// take all the nearby players and filter out any that already exist in the list
+{
+        /// ["names"], truename
+    Undertaker's Gambit
+        /// truename, ["names"], truename
+    Moniker Purification
+        /// truename, ["names"], "name"
+    Locator's Distillation
+        /// truename, ["names"].indexof("name")
+    Numerical Reflection: -1
+        /// truename, ["names"].indexof("name"), -1
+    Equality Distillation
+        /// truename, isNameMissing
+    {
+        Bookkeeper's Gambit: -
+        Bookkeeper's Gambit: v
+    }
+    Flock's Disintegration
+    Augur's Exaltation
+    Hermes' Gambit
+        /// truename|(empty)
+}
+Jester's Gambit
+    /// ["names"], [code], [truenames]
+Thoth's Gambit
+    /// ["names"], [missing truenames]
+
+// if there are none left exit early.
+Gemini Decomposition
+Augur's Purification
+    /// ["names"], [missing truenames], isMissingEmpty
+{
+    Charon's Gambit
+    Bookkeeper's Gambit: -
+}
+Flock's Disintegration
+Augur's Exaltation
+Hermes' Gambit
+    /// ["names"], [missing truenames]
+
+// select one of the names that was missing, inform the user of which one that was
+Numerical Reflection: 0
+    /// ["names"], [missing truenames], 0
+Selection Distillation
+    /// ["names"], truename
+
+// add the string representation of the truename to the names
+Undertaker's Gambit
+    /// truename, ["names"], truename
+Moniker Purification
+    /// truename, ["names"], "name"
+Integration Distillation
+    /// truename, ["names"+]
+Scribe's Reflection
+    /// truename, ["names"+], [this hex]
+Numerical Reflection: 1
+    /// truename, ["names"+], [this hex], 1
+Rotation Gambit
+    /// truename, [this hex], 1, ["names"+]
+Surgeon's Exaltation
+    /// truename, [this hex+]
+Scribe's Gambit 
+    /// truename
+
+// the code to stitch in a name into
+{
+    // create the recall jump
+    Vacant Reflection
+    Iris' Gambit
+        /// []?, ..?, jumpback|recall jump
+    
+    // checking which run this is. the first call will not have a marker iota on the stack (nor anything else)
+    Flock's Reflection
+    Numerical Reflection: 1
+    Equality Distillation
+        /// []?, ..?, jumpback?|recall jump, isFirstCall
+    {
+        Bookkeeper's Gambit: -
+        Charon's Gambit
+    }
+    Flock's Disintegration
+    Augur's Exaltation
+    Hermes' Gambit
+        /// [], ..., jumpback
+    
+    // truename payload
+    {
+        Nullary Reflection
+    }
+    Flock's Disintegration
+        /// [], jumpback, ..., truename
+    
+    // TODO: take the list at the very beginning of the stack and add the truename to it.
+    // Flock's Reflection
+    // // TODO: maybe off by one here?
+    // Fisherman's Gambit
+    //     /// jumpback, ..., truename, []
+    // Jester's Gambit
+    //     /// jumpback, ..., [], truename
+    // Integration Distillation
+    //     /// jumpback, ..., [truename]
+    // Flock's Reflection
+    //     /// jumpback, ..., [truename], stacklen
+    // // TODO: maybe off by one here?
+    // Numerical Reflection: -1
+    // Multiplicative Distillation
+    // Fisherman's Gambit
+    //     /// [truename], jumpback, ...
+
+    // if there are off by ones in the above, this method works.
+    Flock's Reflection
+    Numerical Reflection: -1
+    Additive Distillation
+    Flock's Gambit
+        /// [], [jumpback, ..., truename]
+    Derivation Decomposition
+        /// [], [jumpback, ...], truename
+    Jester's Gambit
+    Rotation Gambit II
+        /// [jumpback, ...], [], truename
+    Integration Distillation
+        /// [jumpback, ...], [truename]
+    Jester's Gambit
+        /// [truename], [jumpback, ...]
+    Flock's Disintegration
+        /// [truename], jumpback, ...
+    
+    // move on to the next jump iota 
+    Hermes' Gambit
+    // (thread abandoned, but technically the rest of code exists in the continuation and will count towards an iota limit)
+}
+    /// truename, [code]
+Gemini Decomposition
+    /// truename, [code], [code]
+Consideration: Nullary Reflection
+Locator's Distillation
+    /// truename, [code], index
+Rotation Gambit
+    /// [code], index, truename
+Surgeon's Exaltation
+    /// [stitched code]
+{
+    // add the name jump this to this hex
+    Scribe's Reflection
+        /// recall jump, [this hex]
+    Gemini Decomposition
+        /// recall jump, [this hex], [this hex]
+    Numerical Reflection: 3
+        /// recall jump, [this hex], [this hex], 3
+    Selection Distillation
+        /// recall jump, [this hex], [names jumps]
+    Rotation Gambit
+        /// [this hex], [names jumps], recall jump
+    Integration Distillation
+        /// [this hex], [names jumps+]
+    Numerical Reflection: 3
+        /// [this hex], [names jumps+], 3
+    Jester's Gambit
+        /// [this hex], 3, [names jumps+]
+    Surgeon's Exaltation
+        /// [this hex+]
+    Scribe's Gambit
+        /// (empty)
+}
+Huginn's Gambit
+Hermes' Gambit
+    /// recall jump
+Muninn's Reflection
+Hermes' Gambit
+
+
