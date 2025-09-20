@@ -1,0 +1,81 @@
+#define Sleep = num -> 
+//initial setup
+Mind's Reflection
+Compass' Purification
+Mind's Reflection
+Alidade's Purification
+Archer's Distillation
+Gemini Decomposition
+Sorter's Purification
+Jester's Gambit
+Single's Purification
+Numerical Reflection: 2
+Flock's Gambit
+Huginn's Gambit
+Numerical Reflection: 0 //iteration count
+//pattern list to recurse with
+{
+    //count, this list
+    Jester's Gambit//this list, count
+    Gemini Decomposition
+    //stop if 16+ iterations deep
+    Numerical Reflection: 32
+    Minimus Distillation
+    {
+        Numerical Reflection: 1
+        Additive Distillation
+    }
+    {
+        Janus' Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit //this list, count++
+    {
+        //this list, count, checked position
+        Bookkeeper's Gambit: vv-
+        Gemini Decomposition
+        Sorter's Purification
+        Muninn's Reflection
+        Numerical Reflection: 0
+        Selection Distillation
+        Equality Distillation
+        {
+            Gemini Decomposition
+            Break Block
+            Numerical Reflection: 26
+            Gemini Gambit
+            Numerical Reflection: 26
+            Flock's Gambit
+            Transformation Purification
+            {
+                <Matrix of 26 offset vectors to form a hollow cube>
+            }
+            Flock's Disintegration
+            Additive Distillation
+            Restoration Purification
+            Muninn's Reflection
+            Flock's Disintegration
+            Rotation Gambit
+            Additive Distillation
+            Uniqueness Purification
+            Numerical Reflection: 2
+            Flock's Gambit
+            Huginn's Gambit
+        }
+        Vacant Reflection
+        Augur's Exaltation
+        Hermes' Gambit
+    }
+    Muninn's Reflection
+    Numerical Reflection: 1
+    Selection Distillation
+    Thoth's Gambit
+    Bookkeeper's Gambit: v//this list, count
+    Numerical Reflection: 1
+    Sleep
+    Jester's Gambit
+    Gemini Decomposition
+    Hermes' Gambit
+}
+Gemini Decomposition
+Hermes' Gambit
