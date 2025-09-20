@@ -1,5 +1,4 @@
 #define Sleep = num -> 
-//initial setup
 Mind's Reflection
 Compass' Purification
 Mind's Reflection
@@ -12,13 +11,10 @@ Single's Purification
 Numerical Reflection: 2
 Flock's Gambit
 Huginn's Gambit
-Numerical Reflection: 0 //iteration count
-//pattern list to recurse with
+Numerical Reflection: 0 
 {
-    //count, this list
-    Jester's Gambit//this list, count
+    Jester's Gambit
     Gemini Decomposition
-    //stop if 16+ iterations deep
     Numerical Reflection: 32
     Minimus Distillation
     {
@@ -29,9 +25,8 @@ Numerical Reflection: 0 //iteration count
         Janus' Gambit
     }
     Augur's Exaltation
-    Hermes' Gambit //this list, count++
+    Hermes' Gambit
     {
-        //this list, count, checked position
         Bookkeeper's Gambit: vv-
         Gemini Decomposition
         Sorter's Purification
@@ -48,7 +43,6 @@ Numerical Reflection: 0 //iteration count
             Flock's Gambit
             Transformation Purification
             {
-                <Matrix of 26 offset vectors to form a hollow cube>
             }
             Flock's Disintegration
             Additive Distillation
@@ -70,7 +64,7 @@ Numerical Reflection: 0 //iteration count
     Numerical Reflection: 1
     Selection Distillation
     Thoth's Gambit
-    Bookkeeper's Gambit: v//this list, count
+    Bookkeeper's Gambit: v
     Numerical Reflection: 1
     Sleep
     Jester's Gambit
