@@ -10,7 +10,7 @@ Single's Purification
 Numerical Reflection: 2
 Flock's Gambit
 Huginn's Gambit
-Numerical Reflection: 0 
+Numerical Reflection: 0
 {
     Jester's Gambit
     Gemini Decomposition
@@ -42,6 +42,7 @@ Numerical Reflection: 0
             Flock's Gambit
             Transformation Purification
             {
+                <[(3, 26) | -1.00, 0.00, 1.00, -1.00, 0.00, 1.00, -1.00, 0.00, 1.00, -1.00, 0.00, 1.00, -1.00, 1.00, -1.00, 0.00, 1.00, -1.00, 0.00, 1.00, -1.00, 0.00, 1.00, -1.00, 0.00, 1.00; -1.00, -1.00, -1.00, -1.00, -1.00, -1.00, -1.00, -1.00, -1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00; -1.00, -1.00, -1.00, 0.00, 0.00, 0.00, 1.00, 1.00, 1.00, -1.00, -1.00, -1.00, 0.00, 0.00, 1.00, 1.00, 1.00, -1.00, -1.00, -1.00, 0.00, 0.00, 0.00, 1.00, 1.00, 1.00]>
             }
             Flock's Disintegration
             Additive Distillation
@@ -65,7 +66,22 @@ Numerical Reflection: 0
     Thoth's Gambit
     Bookkeeper's Gambit: v
     Numerical Reflection: 1
-    Sleep
+    Muninn's Reflection
+    {
+        {
+            Single's Purification
+            Jester's Gambit
+            Enqueue
+            Bookkeeper's Gambit: v
+            Janus' Gambit
+        }
+        Iris' Gambit
+    }
+    Rotation Gambit
+    Single's Purification
+    Thoth's Gambit
+    Bookkeeper's Gambit: v
+    Huginn's Gambit
     Jester's Gambit
     Gemini Decomposition
     Hermes' Gambit
