@@ -1,0 +1,137 @@
+Mind's Reflection
+Compass' Purification
+Ambit Purification
+Vacant Reflection
+{
+    Sekhmet's Gambit: 0
+    Janus' Gambit
+}
+Augur's Exaltation
+Hermes' Gambit
+Mind's Reflection
+Gemini Decomposition
+Compass' Purification
+{
+    <(-0.50, -1.29, -0.50)>
+}
+Flock's Disintegration
+Subtractive Distillation
+Ambit Purification
+Vacant Reflection
+{
+    Sekhmet's Gambit: 0
+    Janus' Gambit
+}
+Augur's Exaltation
+Hermes' Gambit
+{
+    Sekhmet's Gambit: 1
+    Appellation Purification
+}
+Mind's Reflection
+Cart Purification
+Thoth's Gambit
+{
+    <Return>
+}
+Flock's Disintegration
+Locator's Distillation
+Gemini Decomposition
+Numerical Reflection: -1
+Equality Distillation
+{
+    Sekhmet's Gambit: 0
+    Janus' Gambit
+}
+Vacant Reflection
+Augur's Exaltation
+Hermes' Gambit
+Numerical Reflection: 3
+Gemini Gambit
+Numerical Reflection: -3
+Fisherman's Gambit
+Mind's Reflection
+Cart Purification
+Jester's Gambit
+Selection Distillation
+{
+    <[item:minecraft:bundle] | Return (1)>
+}
+Flock's Disintegration
+Inequality Distillation
+Vacant Reflection
+{
+    Sekhmet's Gambit: 0
+    Janus' Gambit
+}
+Augur's Exaltation
+Hermes' Gambit
+Mind's Reflection
+Compass' Purification
+Hopper
+Mind's Reflection
+Compass' Purification
+Entity Purification: Item
+Gemini Decomposition
+Mind's Reflection
+Compass' Purification
+Vector Reflection +Y
+Dispense
+Mind's Reflection
+Compass' Purification
+Floor Purification
+{
+    <(-0.50, -1.29, -0.50)>
+}
+Flock's Disintegration
+Subtractive Distillation
+Entity Purification: Item
+Numerical Reflection: 1
+Fisherman's Gambit II
+Sorter's Purification
+{
+    <Bundle>
+}
+Flock's Disintegration
+Equality Distillation
+{
+    Gemini Decomposition
+    Sorter's Purification
+    Stocktake Purification
+    Jester's Gambit
+    Mediafy Item
+    {
+        Sekhmet's Gambit: 2
+        Dioscuri Gambit
+        Stacking Distillation II
+        {
+            Additive Distillation
+            Bookkeeper's Gambit: v
+        }
+        {
+            Bookkeeper's Gambit: vv
+        }
+        Augur's Exaltation
+        Hermes' Gambit
+    }
+    Rotation Gambit
+    Thoth's Gambit
+    Bookkeeper's Gambit: v
+    Bookkeeper's Gambit: v
+    {
+        <[Gemini Decomposition, Mind's Reflection, Compass' Purification, Vector Reflection +Y, Dispense, Mind's Reflection, Compass' Purification, Floor Purification, Introspection, (-0.50, -1.29, -0.50), Retrospection, Flock's Disintegration, Subtractive Distillation, Entity Purification: Item, Numerical Reflection: 1, Fisherman's Gambit II, Sorter's Purification, Introspection, Bundle, Retrospection, Flock's Disintegration, Equality Distillation, Introspection, Gemini Decomposition, Sorter's Purification, Stocktake Purification, Jester's Gambit, Mediafy Item, Introspection, Sekhmet's Gambit: 2, Dioscuri Gambit, Stacking Distillation II, Introspection, Additive Distillation, Bookkeeper's Gambit: v, Retrospection, Introspection, Bookkeeper's Gambit: vv, Retrospection, Augur's Exaltation, Hermes' Gambit, Retrospection, Rotation Gambit, Thoth's Gambit, Bookkeeper's Gambit: v, Bookkeeper's Gambit: v, Introspection, Bookkeeper's Gambit: -, Retrospection, Flock's Disintegration, Gemini Decomposition, Numerical Reflection: 47, Jester's Gambit, Surgeon's Exaltation, Hermes' Gambit, Retrospection, Vacant Reflection, Augur's Exaltation, Hermes' Gambit]>
+    }
+    Flock's Disintegration
+    Gemini Decomposition
+    Numerical Reflection: 47
+    Jester's Gambit
+    Surgeon's Exaltation
+    Hermes' Gambit
+}
+Vacant Reflection
+Augur's Exaltation
+Hermes' Gambit
+Bookkeeper's Gambit: v-
+Mind's Reflection
+Rotation Gambit
+Hopper
