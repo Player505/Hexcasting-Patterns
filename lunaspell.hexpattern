@@ -1,0 +1,164 @@
+Mind's Reflection
+Compass' Purification
+Numerical Reflection: 32
+Zone Distillation: Player
+Mind's Reflection
+Speaker's Distillation
+Mind's Reflection
+Single's Purification
+Exclusion Distillation
+Gemini Decomposition
+Augur's Purification
+{
+    {
+        Compass' Purification
+    }
+    Jester's Gambit
+    Thoth's Gambit
+    Flock's Disintegration
+    Summon Sentinel
+}
+{
+    Locate Sentinel
+    Numerical Reflection: 16
+    Zone Distillation: Player
+    Mind's Reflection
+    Speaker's Distillation
+    Mind's Reflection
+    Single's Purification
+    Exclusion Distillation
+    Gemini Decomposition
+    Augur's Purification
+    {
+        {
+            Compass' Purification
+        }
+        Jester's Gambit
+        Thoth's Gambit
+        Flock's Disintegration
+        Summon Sentinel
+    }
+    {
+        Mind's Reflection
+        Stadiometer's Purification
+        Numerical Reflection: 17
+        Numerical Reflection: 10
+        Division Distillation
+        (// Only if pekhui is installed 
+        Mind's Reflection
+        Gulliver's Purification
+        Multiplicative Distillation
+        )// End
+        Minimus Distillation
+        (// If you want to be able to decide whether the sentinel walker should be useable in flight or not. You can omit this if you want.
+        Mind's Reflection
+        Stadiometer's Purification
+        Numerical Reflection: 1
+        (// Only if pekhui is installed 
+        Mind's Reflection
+        Gulliver's Purification
+        Multiplicative Distillation
+        )// End 
+        Maximus Distillation
+        Negation Purification
+        // Use disjunction distillation (OR) here to be able to use it in flight, use exclusion distillation (XOR) if you want to disable it in flight.
+        // I just went with disjunction distillation as default.
+        Disjunction Distillation
+        )// End
+        {
+            Mind's Reflection
+            Compass' Purification
+            Summon Greater Sentinel
+            Numerical Reflection: 1
+            Numerical Reflection: 25
+            Gemini Gambit
+            Numerical Reflection: 25
+            Flock's Gambit
+            {
+                Locate Sentinel
+                Numerical Reflection: 16
+                Zone Distillation: Player
+                Mind's Reflection
+                Speaker's Distillation
+                Mind's Reflection
+                Single's Purification
+                Exclusion Distillation
+                Gemini Decomposition
+                Augur's Purification
+                {
+                    Flock's Disintegration
+                    Gemini Decomposition
+                    Compass' Purification
+                    Locate Sentinel
+                    Subtractive Distillation
+                    Length Purification
+                    Numerical Reflection: 2
+                    Minimus Distillation
+                    {
+                    }
+                    {
+                        Compass' Purification
+                        Summon Greater Sentinel
+                    }
+                    Augur's Exaltation
+                    Hermes' Gambit
+                }
+                {
+                    Locate Sentinel
+                    Mind's Reflection
+                    Alidade's Purification
+                    Numerical Reflection: 8
+                    Multiplicative Distillation
+                    Additive Distillation
+                    Summon Greater Sentinel
+                }
+                Augur's Exaltation
+                Hermes' Gambit
+            }
+            Jester's Gambit
+            Thoth's Gambit
+        }
+        {
+            (Empty)
+        }
+        Augur's Exaltation
+        Hermes' Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+}
+Augur's Exaltation
+Hermes' Gambit
+{
+    Locate Sentinel
+    Numerical Reflection: 16
+    Zone Distillation: Player
+    Mind's Reflection
+    Speaker's Distillation
+    Mind's Reflection
+    Single's Purification
+    Exclusion Distillation
+    Auditor's Reflection
+    {
+        {
+            Compass' Purification
+            Numerical Reflection: 5
+            Gemini Gambit
+            Break Block
+            Create Water
+            Numerical Reflection: 10
+            Explosion
+            Conjure Block
+            Break Block
+        }
+        Jester's Gambit
+        Thoth's Gambit
+    }
+    {
+        (Empty)
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    Reveal
+}
+Hermes' Gambit
